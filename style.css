@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500&display=swap');
+
+/* === Base Setup === */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #e2e8f0;
+  background: #000000; /* 🖤 solid black background */
+}
+
+/* === Canvas Background === */
+#circuit-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* ✅ stays behind all content */
+  background: radial-gradient(circle at 20% 30%, #0b1120, #000000 80%);
+}
+
+/* === Loader Screen === */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 40% 40%, #0a0e13 40%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 9999;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.loader-text {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-shadow: 0 0 8px #fde047, 0 0 16px #facc15;
+  animation: flicker 3s infinite;
+}
+
+.loader-bars {
+  display: flex;
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.loader-bars span {
+  width: 8px;
+  height: 40px;
+  background: #38bdf8;
+  border-radius: 4px;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+.loader-bars span:nth-child(2) { animation-delay: 0.2s; }
+.loader-bars span:nth-child(3) { animation-delay: 0.4s; }
+.loader-bars span:nth-child(4) { animation-delay: 0.6s; }
+
+.loader-sub {
+  font-size: 0.9rem;
+  color: #93c5fd;
+  letter-spacing: 1px;
+  animation: fadeblink 2s infinite;
+}
+
+/* Loader animations */
+@keyframes pulse {
+  0%, 100% { transform: scaleY(0.5); opacity: 0.5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes fadeblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+body.loaded #loader {
+  opacity: 0;
+  visibility: hidden;
+}
+body.loaded #content {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ✅ Dedenne Image (your requested version) */
+.hero-img {
+  width: 160px;
+  border-radius: 50%;
+  padding: 8px;
+  background: radial-gradient(circle, rgba(251,191,36,0.2), rgba(0,0,0,0) 70%);
+  box-shadow: 0 0 20px rgba(251,191,36,0.4);
+  filter: drop-shadow(0 0 12px #ffb703);
+  animation: float 4s ease-in-out infinite, pulseGlow 2s infinite;
+  border: 2px solid red; /* 🔴 visible test border */
+  z-index: 10;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(251,191,36,0.4); }
+  50% { box-shadow: 0 0 40px rgba(251,191,36,0.8); }
+}
+
+/* === Title & Text === */
+.glow {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  color: #fbbf24;
+  text-shadow: 0 0 8px #facc15, 0 0 16px #fde047;
+  margin-top: 10px;
+}
+
+.flicker {
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; text-shadow: 0 0 8px #facc15, 0 0 16px #fde047; }
+  20%, 24%, 55% { opacity: 0.4; text-shadow: none; }
+}
+
+.subtitle {
+  color: #38bdf8;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.tagline {
+  color: #a5f3fc;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+/* === Construction Section === */
+.construction {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.construction h2 {
+  color: #fcd34d;
+  margin-bottom: 10px;
+}
+
+/* === Features Section === */
+.features {
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.features h2 {
+  color: #93c5fd;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+.feature-card h3 {
+  color: #7dd3fc;
+  margin-bottom: 8px;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.8rem;
+  color: #64748b;
+  padding: 30px 0 15px;
+  text-align: center;
+}
+#content, .hero-img { opacity: 1 !important; visibility: visible !important; }
