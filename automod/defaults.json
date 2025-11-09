@@ -1,0 +1,13 @@
+{
+  "filters": {
+    "badWords": ["slur1", "slur2"],
+    "links": false,
+    "capsLimit": 80
+  },
+  "actions": {
+    "delete": true,
+    "warn": true,
+    "log": true
+  },
+  "logChannel": null
+}

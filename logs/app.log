@@ -1,0 +1,59 @@
+2025-11-06T11:39:12.876Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T11:49:34.683Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:00:35.146Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:01:24.203Z [INFO] [simulate] join 378678890345791489: no match
+2025-11-06T12:02:14.443Z [INFO] [simulate] join 378678890345791489: simulated nuzzle
+2025-11-06T12:07:06.782Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:09:33.273Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:10:35.559Z [INFO] [searchban] exact lookup 378678890345791489 by retronyte
+2025-11-06T12:11:26.462Z [INFO] [searchban] query "alt account" -> 0 matches (requested by retronyte)
+2025-11-06T12:11:57.993Z [INFO] [searchban] exact lookup 378678890345791489 by retronyte
+2025-11-06T12:12:24.593Z [INFO] [searchban] list requested by serenblade (1 active)
+2025-11-06T12:19:53.903Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:22:04.345Z [INFO] [searchban] exact lookup 123456789012345678 by retronyte
+2025-11-06T12:22:46.423Z [INFO] [simulate] join 123456789012345678: simulated nuzzle
+2025-11-06T12:43:28.778Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T12:46:13.488Z [INFO] [searchban] exact lookup 123456789012345678 by serenblade
+2025-11-06T12:47:26.636Z [INFO] [backup] Saved backup copy: ./bans_backup_2025-11-06-12-47-26.json
+2025-11-06T12:47:26.638Z [INFO] [unban] Removed 123456789012345678 (Unknown User (123456789012345678)) for reason: No reason given by serenblade
+2025-11-06T12:48:23.387Z [INFO] [exportbans] serenblade exported 1 entries to ./banlist_export_2025-11-06-12-48-19.txt
+2025-11-06T12:49:21.960Z [INFO] [simulate] join 123456789012345678: no match
+2025-11-06T13:47:44.647Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-06T13:48:35.191Z [INFO] [strike] SCNX#9773 (787026352191701033) strike #1 — No reason given
+2025-11-06T13:49:09.705Z [INFO] [strike] SCNX#9773 (787026352191701033) strike #2 — No reason given
+2025-11-06T13:49:23.521Z [INFO] [strike] SCNX#9773 (787026352191701033) strike #3 — No reason given
+2025-11-08T09:35:11.935Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T09:48:40.693Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T09:50:26.749Z [INFO] [strike] retronyte (1097729364042457171) strike #1 — embed colors
+2025-11-08T09:52:01.591Z [INFO] [resetstrikes] Deleted strike record for 1097729364042457171 (retronyte)
+2025-11-08T09:52:29.961Z [INFO] [resetstrikes] Deleted strike record for 787026352191701033 (SCNX#9773)
+2025-11-08T09:57:34.982Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T12:28:28.960Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T12:30:18.055Z [INFO] [simulate] join 1174625926135427172: no match
+2025-11-08T13:04:31.454Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:13:04.912Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:16:36.045Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:25:06.541Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:26:30.831Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:39:29.300Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T13:51:55.723Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-08T14:29:10.782Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T06:15:37.621Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T06:23:11.057Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T06:23:11.203Z [ERROR] [setup] Failed to ensure log channel for The Pixel Odyssey: Missing Permissions
+2025-11-09T06:23:11.427Z [ERROR] [setup] Failed to ensure log channel for Lumiose Hub: Missing Permissions
+2025-11-09T11:25:41.040Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T11:25:41.275Z [ERROR] [setup] Failed to ensure log channel for The Pixel Odyssey: Missing Permissions
+2025-11-09T11:25:41.516Z [ERROR] [setup] Failed to ensure log channel for Lumiose Hub: Missing Permissions
+2025-11-09T11:28:21.623Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T11:28:21.783Z [ERROR] [setup] Failed to ensure log channel for The Pixel Odyssey: Missing Permissions
+2025-11-09T11:28:22.082Z [INFO] [setup] Security log channel set for Lumiose Hub: 1437041120260395089
+2025-11-09T12:02:50.770Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T12:02:50.897Z [INFO] [save] Updated config for Lumiose Hub
+2025-11-09T12:04:12.799Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T12:04:12.969Z [INFO] [save] Updated config for The Pixel Odyssey
+2025-11-09T12:07:47.419Z [INFO] [save] Updated config for Lumiose Hub
+2025-11-09T12:08:04.681Z [INFO] [save] Updated config for Lumiose Hub
+2025-11-09T12:11:29.157Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T12:31:55.453Z [INFO] ✅ Alpha Dedenne online as Alpha Dedenne#6729
+2025-11-09T12:32:47.866Z [INFO] [MODE] Lumiose Hub -> 2
