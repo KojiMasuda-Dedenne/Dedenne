@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>⚡ Alpha Dedenne Control Center</title>
 
-  <!-- ✅ Relative path for GitHub Pages -->
+  <!-- 🔧 Local relative paths -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- Power-Up Loader -->
   <div id="loader">
     <div class="loader-text">POWERING UP</div>
     <div class="loader-bars">
@@ -19,13 +17,10 @@
     <p class="loader-sub" id="boot-text">Initializing Lumiose Circuits...</p>
   </div>
 
-  <!-- Animated background -->
   <canvas id="circuit-bg"></canvas>
 
-  <!-- Main dashboard content -->
   <div id="content" style="opacity:0;">
     <div class="hero">
-      <!-- ✅ Relative image path -->
       <img src="images/dedenne.png" alt="Alpha Dedenne" class="hero-img" />
       <h1 class="glow flicker">Alpha Dedenne v2.7.3</h1>
       <p class="subtitle">“Tri-Circuit Simulation Build”</p>
@@ -41,22 +36,10 @@
     <section class="features">
       <h2>Planned Features</h2>
       <div class="feature-grid">
-        <div class="feature-card">
-          <h3>🛡️ Auto-Mod</h3>
-          <p>Smart strike system & dynamic rule management for your server.</p>
-        </div>
-        <div class="feature-card">
-          <h3>📊 Security Logs</h3>
-          <p>Detailed tracking of joins, bans, and events in real time.</p>
-        </div>
-        <div class="feature-card">
-          <h3>🎨 Customization</h3>
-          <p>Change the bot’s avatar, nickname, and theme colors to match your guild.</p>
-        </div>
-        <div class="feature-card">
-          <h3>⚙️ Dashboard Controls</h3>
-          <p>Toggle modes, view activity, and manage commands with one click.</p>
-        </div>
+        <div class="feature-card"><h3>🛡️ Auto-Mod</h3><p>Smart strike system & dynamic rule management.</p></div>
+        <div class="feature-card"><h3>📊 Security Logs</h3><p>Detailed tracking of joins, bans, and events.</p></div>
+        <div class="feature-card"><h3>🎨 Customization</h3><p>Change bot theme and personality per guild.</p></div>
+        <div class="feature-card"><h3>⚙️ Dashboard Controls</h3><p>Toggle modes and commands with one click.</p></div>
       </div>
     </section>
 
@@ -65,48 +48,24 @@
     </footer>
   </div>
 
-  <!-- === Scripts (✅ relative paths) === -->
   <script src="js/circuit.js"></script>
   <script src="js/loader.js"></script>
   <script src="js/dedenne.js"></script>
 
-  <!-- === Fallback === -->
   <script>
-    window.addEventListener("load", () => {
-      // fade in the main content after everything is ready
-      document.body.classList.add("loaded");
-      const content = document.getElementById("content");
-      if (content) {
-        content.style.opacity = "1";
-        content.style.visibility = "visible";
-      }
-
-      // guarantee the Dedenne image itself is visible
-      const dedenne = document.querySelector(".hero-img");
-      if (dedenne) {
-        dedenne.style.opacity = "1";
-        dedenne.style.visibility = "visible";
-        dedenne.style.display = "block";
-      }
-    });
-
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+    const content = document.getElementById("content");
+    if (content) {
+      content.style.opacity = "1";
+      content.style.visibility = "visible";
+    }
     const dedenne = document.querySelector(".hero-img");
     if (dedenne) {
-      dedenne.addEventListener("error", () => {
-        console.warn("⚠️ Dedenne image failed to load — using placeholder.");
-        dedenne.src =
-          "data:image/svg+xml;utf8," +
-          encodeURIComponent(`
-            <svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'>
-              <circle cx='80' cy='80' r='65' fill='rgba(10,16,20,0.8)' stroke='#fbbf24' stroke-width='3'/>
-              <circle cx='80' cy='80' r='40' stroke='#38bdf8' stroke-width='3' stroke-dasharray='8 6' fill='none'>
-                <animateTransform attributeName='transform' attributeType='XML' type='rotate' from='0 80 80' to='360 80 80' dur='4s' repeatCount='indefinite'/>
-              </circle>
-              <text x='80' y='90' text-anchor='middle' fill='#fbbf24' font-family='Orbitron' font-size='10'>Dedenne</text>
-            </svg>
-          `);
-      });
+      dedenne.style.opacity = "1";
+      dedenne.style.display = "block";
     }
+  });
   </script>
 </body>
 </html>
