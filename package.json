@@ -1,0 +1,17 @@
+{
+  "name": "alpha-dedenne",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "discord.js": "^14.16.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "winston": "^3.9.0"
+  }
+}
